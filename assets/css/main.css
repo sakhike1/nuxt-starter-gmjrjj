@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap');
+
+:root {
+  --background-color: rgb(51, 65, 85);
+  --white-bg: #fff;
+  --reg-bg: rgb(24 24 27);
+  --dark-bg: rgb(51 65 85);
+  --gray-bg: rgb(245 245 245);
+  --green-bg: rgb(4 120 87);
+  --error-bg: #f03a5f;
+}
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+html,
+body {
+  box-sizing: border-box;
+  height: 100%;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.75;
+  overflow-x: hidden;
+  opacity: 1;
+  color: #404040;
+  font-family: 'Rubik', sans-serif;
+}
+
+.container {
+  max-width: 80rem;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0 auto;
+}
+section {
+  padding: 60px 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  outline: 0;
+  text-decoration: none;
+  color: inherit;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin: 0.67em 0;
+}
+h2 {
+  font-size: 2em;
+  margin-top: 0.83em;
+  margin-bottom: 0.83em;
+}
+h3 {
+  font-size: 1.17em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+h4 {
+  font-size: 1em;
+  margin-top: 1.33em;
+  margin-bottom: 1.33em;
+}
+
+p {
+  margin-bottom: 1.5em;
+}
+
+img {
+  max-width: 100%;
+}
+[type='button']:not(:disabled),
+[type='reset']:not(:disabled),
+[type='submit']:not(:disabled),
+button:not(:disabled) {
+  cursor: pointer;
+}
+button:focus:not(:focus-visible) {
+  outline: 0;
+}
+.header {
+  padding: 2rem 0;
+}
+.header .flex {
+  align-items: center;
+  justify-content: space-between;
+}
+.footer {
+  padding: 1.6rem 0;
+  text-align: center;
+}
+.footer p {
+  margin: 0;
+}
+.header,
+.footer {
+  background-color: var(--dark-bg);
+  color: var(--white);
+}
+.layout {
+  padding: 2rem 0;
+  height: 100vh;
+  background-color: var(--gray-bg);
+}
+.flex {
+  display: flex;
+}
+.max-w {
+  max-width: 36rem;
+  margin: 0 auto;
+}
+.text-center {
+  text-align: center;
+}
+.header__btn,
+.form__btn {
+  color: var(--white-bg);
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form__input {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: var(--white-bg);
+  background-clip: padding-box;
+  border: 1px solid #939699;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.form__input:focus {
+  color: #212529;
+  background-color: var(--white-bg);
+  border-color: #939699;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgb(49 82 82 / 25%);
+}
+
+.login {
+  background-color: var(--green-bg);
+}
+.login:hover {
+  background-color: rgb(6 95 70);
+}
+.login:focus,
+.form__btn:focus {
+  border-color: var(--green-bg);
+  box-shadow: 0 0 0 0.25rem rgb(4 120 87 / 50%);
+}
+.register {
+  background-color: var(--reg-bg);
+}
+.register:hover {
+  background-color: rgb(39 39 42);
+}
+.register:focus {
+  border-color: var(--reg-bg);
+  box-shadow: 0 0 0 0.25rem rgb(24 24 27 / 50%);
+}
+.logout {
+  border: 1px solid var(--gray-bg);
+}
+.logout:hover {
+  background-color: rgb(23 37 60);
+}
+.logout:focus {
+  border-color: var(--gray-bg);
+  box-shadow: 0 0 0 0.25rem rgb(245 245 245 / 50%);
+}
+
+.header .header__btn {
+  margin-left: 6px;
+  margin-right: 6px;
+}
+.header__link {
+  padding: 0.375rem 0.75rem;
+}
+
+.form__group {
+  padding: 15px 0;
+}
+.form__btn {
+  background-color: var(--green-bg);
+  padding: 0.5rem 2.75rem;
+}
+.account-info {
+  padding: 20px 0;
+}
+.account-info__link {
+  color: cornflowerblue;
+  text-decoration: underline;
+}
+.login__error-msg,
+.register__error-msg {
+  padding: 15px;
+  border-radius: 0.25rem;
+  color: var(--white-bg);
+  background: var(--error-bg);
+}
+.header__nav {
+  display: flex;
+  align-items: center;
+}
